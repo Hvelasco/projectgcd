@@ -1,2 +1,3 @@
-# projectgcd
-Project for the Getting and Cleaning Data on Coursera
+# Instructions for using the run_analysis.R
+As long as u have the contents of the Samsung Data in your working directory and have installed the "dplyr" package, this code should run smoothly. It will create a file named "tidy_data.txt" with the output requested by the course project. Your working directory should contain the "train" and "test" directories.
+First I loaded the files into two different data sets already with the subject and actions vectors. The "X_test/train.txt" files were already loaded only with the variables I needed.  Then I named the data sets with the description names, labeled the actions and created a variable called sets that is 1 for the test data and 2 for the train data. After that I merged the two sets with rbind, creating a long formatted data set. After that I used group_by and summarise_each to make the tidy data with the means of each variable by set, subject and action.
