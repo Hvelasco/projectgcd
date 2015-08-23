@@ -5,14 +5,14 @@ We are requested to take the wearable data from Samsung Galaxy S II and tidy it 
 ##Study design and data processing
 
 ###Collection of the raw data
-The data was downloaded from the link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-Here is a full description of the data: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The data was downloaded from the link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip   
+Here is a full description of the data: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
 ###Notes on the original (raw) data 
-The original data was divided in 6 .txt files which were separated in 3 groups:
-1: A vector of codes for each subject.
-2: A vector of codes for each action recorded.
-3: A matrix of the collected data.
+The original data was divided in 6 .txt files which were separated in 3 groups:  
+1: A vector of codes for each subject.  
+2: A vector of codes for each action recorded.  
+3: A matrix of the collected data.  
 
 ##Creating the tidy datafile
 
