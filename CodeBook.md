@@ -102,19 +102,363 @@ A general summary of the data is as follows:
  fBodyBodyGyroJerkMag-std : num  -0.558 -0.622 -0.344 -0.99 -0.978 ...
  
  
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+### set
+This variable describes which set of recordings this observation comes from, the "test" set or the "train" set.
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+ - Factor variable
+ - 1 == test
+ - 2 == train
+ - no unit of measurement.
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+### subject
+This variable describes which subject this observation was recorded from.
 
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
+ - Factor variable
+ - 30 levels, one for each subject.
+ - no unit of measurement.
+
+### action
+This variable describes which action was being performed by the subject during this recording.
+
+ - Factor variable
+ - 6 levels.
+ -- 1 == WALKING
+ -- 2 == WALKING_UPSTAIRS
+ -- 3 == WALKING_DOWNSTAIRS
+ -- 4 == SITTING
+ -- 5 == STANDING
+ -- 6 == LAYING
+ - no unit of measurement.
+
+### tBodyAcc-mean-X
+Mean of the body acceleration signal on the X axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAcc-mean-Y
+Mean of the body acceleration signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAcc-mean-Z
+Mean of the body acceleration signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAcc-std-X
+Standard deviation of the body acceleration signal on the X axis 
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAcc-std-Y
+Standard deviation of the body acceleration signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAcc-std-Z
+Standard deviation of the body acceleration signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAcc-mean-X
+Mean of the gravity acceleration signal on the X axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAcc-mean-Y
+Mean of the gravity acceleration signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAcc-mean-Z
+Mean of the gravity acceleration signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAcc-std-X
+Standard deviation of the gravity acceleration signal on the X axis 
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAcc-std-Y
+Standard deviation of the gravity acceleration signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAcc-std-Z
+Standard deviation of the gravity acceleration signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerk-mean-X
+Mean of the body acceleration jerk (linear and angular) signal on the X axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerk-mean-Y
+Mean of the body acceleration jerk (linear and angular) signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerk-mean-Z
+Mean of the body acceleration jerk (linear and angular) signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerk-std-X
+Standard deviation of the body acceleration jerk (linear and angular) signal on the X axis 
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerk-std-Y
+Standard deviation of the body acceleration jerk (linear and angular) signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerk-std-Z
+Standard deviation of the body acceleration jerk (linear and angular) signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyro-mean-X
+Mean of the body gyroscope signal on the X axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyro-mean-Y
+Mean of the body gyroscope signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyro-mean-Z
+Mean of the body gyroscope signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyro-std-X
+Standard deviation of the body gyroscope signal on the X axis 
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyro-std-Y
+Standard deviation of the body gyroscope signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyro-std-Z
+Standard deviation of the body gyroscope signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerk-mean-X
+Mean of the body gyroscope jerk (linear and angular) signal on the X axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerk-mean-Y
+Mean of the body gyroscope jerk (linear and angular) signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerk-mean-Z
+Mean of the body gyroscope jerk (linear and angular) signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerk-std-X
+Standard deviation of the body gyroscope jerk (linear and angular) signal on the X axis 
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerk-std-Y
+Standard deviation of the body gyroscope jerk (linear and angular) signal on the Y axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerk-std-Z
+Standard deviation of the body gyroscope jerk (linear and angular) signal on the Z axis
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccMag-mean
+Mean of the boddy acceleration signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccMag-std
+Standard deviation of the boddy acceleration signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAccMag-mean
+Mean of the gravity acceleration signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tGravityAccMag-std
+Standard deviation of the gravity acceleration signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerkMag-mean
+Mean of the body acceleration jerk (linear and angular) signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyAccJerkMag-std
+Standard deviation of the body acceleration jerk (linear and angular) signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroMag-mean
+Mean of the body gyroscope signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroMag-std
+Standard deviation of the body gyroscope signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerkMag-mean
+Mean of the body gyroscope jerk (linear and angular) signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### tBodyGyroJerkMag-std
+Standard deviation of the body gyroscope jerk (linear and angular) signal magnitude using the Euclidean norm.
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAcc-mean-X
+Fast Fourier Transform (FFT) applied to tBodyAcc-mean-X 
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAcc-mean-Y
+Fast Fourier Transform (FFT) applied to tBodyAcc-mean-Y
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAcc-mean-Z
+Fast Fourier Transform (FFT) applied to tBodyAcc-mean-Z
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAcc-std-X
+Fast Fourier Transform (FFT) applied to tBodyAcc-std-X
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAcc-std-Y
+Fast Fourier Transform (FFT) applied to tBodyAcc-std-Y
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAcc-std-Z
+Fast Fourier Transform (FFT) applied to tBodyAcc-std-Z
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccJerk-mean-X
+Fast Fourier Transform (FFT) applied to tBodyAccJerk-mean-X
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccJerk-mean-Y
+Fast Fourier Transform (FFT) applied to tBodyAccJerk-mean-Y
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccJerk-mean-Z
+Fast Fourier Transform (FFT) applied to tBodyAccJerk-mean-Z
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccJerk-std-X
+Fast Fourier Transform (FFT) applied to tBodyAccJerk-std-X
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccJerk-std-Y
+Fast Fourier Transform (FFT) applied to tBodyAccJerk-std-Y
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccJerk-std-Z
+Fast Fourier Transform (FFT) applied to tBodyAccJerk-std-Z
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyGyro-mean-X
+Fast Fourier Transform (FFT) applied to tBodyGyro-mean-X
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyGyro-mean-Y
+Fast Fourier Transform (FFT) applied to tBodyGyro-mean-Y
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyGyro-mean-Z
+Fast Fourier Transform (FFT) applied to tBodyGyro-mean-Z
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyGyro-std-X
+Fast Fourier Transform (FFT) applied to tBodyGyro-std-X
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyGyro-std-Y
+Fast Fourier Transform (FFT) applied to tBodyGyro-std-Y
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyGyro-std-Z
+Fast Fourier Transform (FFT) applied to tBodyGyro-std-Z
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccMag-mean
+Fast Fourier Transform (FFT) applied to tBodyAccMag-mean
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyAccMag-std
+Fast Fourier Transform (FFT) applied to tBodyAccMag-std
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyBodyAccJerkMag-mean
+Fast Fourier Transform (FFT) applied to tBodyBodyAccJerkMag-mean
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyBodyAccJerkMag-std
+Fast Fourier Transform (FFT) applied to tBodyBodyAccJerkMag-std
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyBodyGyroMag-mean
+Fast Fourier Transform (FFT) applied to tBodyBodyGyroMag-mean
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyBodyGyroMag-std
+Fast Fourier Transform (FFT) applied to tBodyBodyGyroMag-std
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyBodyGyroJerkMag-mean
+Fast Fourier Transform (FFT) applied to tBodyBodyGyroJerkMag-mean
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
+
+### fBodyBodyGyroJerkMag-std
+Fast Fourier Transform (FFT) applied to tBodyBodyGyroJerkMag-std
+Variable is unitless because it was normalised.
+Variable can assume values between -1 and 1.
 
 ##Sources
 Coursera Getting and Cleaning Data
